@@ -9,11 +9,11 @@
   "author": "Rahul Kadyan <hi@znck.me>",
   "license": "MIT",
   "scripts": {
-    "install": "npx run build",
+    "install": "npm run build",
     "lint": "eslint --ext .vue,.js,.json .",
     "lint:fix": "eslint --fix --ext .vue,.js,.json .",
     "precommit": "yarn run lint",
-    "build": "rollup -c",
+    "build": "npx rollup -c",
     "prepublishOnly": "npm run build",
     "postpublish": "git push && git push --tags"
   },
